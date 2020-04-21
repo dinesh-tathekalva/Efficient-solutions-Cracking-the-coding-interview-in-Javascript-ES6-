@@ -1,7 +1,7 @@
 // recursive method - base conditons and target are important in this method
 var fibR = (n) =>{
     if(n<2) return n;
-    return fib(n-1) + fib(n-2)
+    return fibR(n-1) + fibR(n-2)
 }
 console.log("resursive method: " + fibR(10))
 
