@@ -1,26 +1,36 @@
-
 <div id="root"></div>
 <div id="root1"></div>
 
 <script>
     var unique = () => {
         var arr = new Array(255)
-        for (i=0;i<255;i++){ //make all elements 0 in the array
-            arr[i]=0;
+        var str = "Californiaaa"
+        for (i = 0; i < arr.length; i++) {
+            arr[i] = 0;
         }
-        var str = "NapaValley"
-        for (var i=0; i<str.length; i++){
+        for (i = 0; i < str.length; i++) {
             arr[str.charCodeAt(i)]++
         }
-        console.log(arr)
-        // to check unique or not
-        for(var j=0; j<arr.length;j++){
-            if(arr[j]>1){
-                return document.getElementById("root").innerHTML = false
+        //to check unique letters
+        for(i=0; i<arr.length; i++){
+            if(arr[i] == 1) {
+                console.log(arr[i], String.fromCharCode(i))
             }
         }
-        return document.getElementById("root1").innerHTML = true
-        // to check repeated values
+
+        // to check repeated letters
+        for (j = 0; j < arr.length; j++) {
+            if (arr[j] > 1) {
+                console.log(arr[j], String.fromCharCode(j))
+            }
+        }
+        // to check unique or not
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i] > 1) {
+                return document.getElementById("root").innerHTML = "Unique: " + false
+            }
+        }
+        return document.getElementById("root1").innerHTML = "Unique: " + true
     }
-    unique();
+    unique()
 </script>
