@@ -1,0 +1,37 @@
+<div id="root"></div>
+<div id="root1"></div>
+
+<script>
+  var perm = () => {
+    var str1 = "mona"
+    var str2 = "omna"
+    var arr = new Array(255)
+
+    //setting all values of array to 0
+    for (let i = 0; i < arr.length; i++) {
+      arr[i] = 0
+    }
+
+    //set mona in arr
+    for (let i = 0; i < str1.length; i++) {
+      arr[str1.charCodeAt(i)]++
+    }
+    //console.log(arr)
+
+    // check noma in arr
+    for (let i = 0; i < str2.length; i++) {
+      arr[str2.charCodeAt(i)]--
+    }
+    //console.log(arr)
+
+    //check array for permutation
+    for (j = 0; j < arr.length - 1; j++) {
+      if (arr[j] !== 0) {
+        console.log(j)
+        return document.getElementById("root").innerHTML = "permutation: " + false
+      }
+    }
+    return document.getElementById("root").innerHTML = "permutation: " + true
+  }
+  perm()
+</script>
