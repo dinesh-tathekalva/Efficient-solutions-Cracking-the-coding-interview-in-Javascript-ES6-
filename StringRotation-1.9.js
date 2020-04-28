@@ -1,7 +1,7 @@
 var rotate = () => {
     str1 = "waterbottle"
     str2 = "erbottlewat"
-    str = str1.concat(str2) //adding two strings
+    str = str1.concat(str1) //formula
     if (str1.length != str2.length) {
         return console.log(false)
     }
