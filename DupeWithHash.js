@@ -10,6 +10,6 @@ var dupe = () => {
             hs1.add(arr[i])
         }
     }
-    return console.log(hs2)
+    return console.log(hs2) // print the repeated values
 }
 dupe()
