@@ -45,5 +45,4 @@ var select = (str1, str2) => { //detects to use inc() or edit() based on input
     }
     return console.log("edit: " + true)
   }
-  
   select("pule", "palew")
