@@ -11,5 +11,4 @@ var comp = () => {
     }
     return compression
 }
-
 comp()
