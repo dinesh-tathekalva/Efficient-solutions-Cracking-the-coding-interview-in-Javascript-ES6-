@@ -9,7 +9,6 @@ var countArray = () =>{
       hsmap.set(arr[i], 1)
     }
   }
-  
   for(var key of hsmap.keys())
   {
   if(hsmap.get(key)===1)
