@@ -5,6 +5,7 @@ var fibR = (n) =>{
 }
 console.log("resursive method: " + fibR(10))
 
+
 //iterative method
 var fibI = (n)=> {
     var f = new Array(n+2);
