@@ -30,7 +30,7 @@ var select = (str1, str2) => { //detects to use inc() or edit() based on input
     }
     return console.log(true)
   }
-  
+
   var edit=(str1, str2)=>{ //checks if changing one letter matches the strings
     var flag = false;
     for(i=0; i<str2.length; i++){
