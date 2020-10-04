@@ -12,3 +12,4 @@ var flatArray = () => {
     }
   }
   flatArray()
+  
