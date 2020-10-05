@@ -9,6 +9,7 @@ var select = (str1, str2) => { //detects to use inc() or edit() based on input
       return edit(str1, str2)
     }
   } 
+  
   var inc = (str1, str2) => { // checks for adding a letter or deleting a letter based on input
     var ind1 = 0 
     var ind2 = 0
