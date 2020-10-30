@@ -8,4 +8,5 @@ var avg = () => {
     var AvgOA = add/arr.length
     console.log(AvgOA)
   }
+
   avg()
