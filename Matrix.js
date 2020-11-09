@@ -7,4 +7,5 @@ const matrix = () => {
     }
     return console.log(arr)
     }
+
     matrix()
