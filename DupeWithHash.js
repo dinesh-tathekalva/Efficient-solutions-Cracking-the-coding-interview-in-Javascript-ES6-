@@ -13,3 +13,4 @@ var dupe = () => {
     return console.log(hs2) // print the repeated values
 }
 dupe()
+
