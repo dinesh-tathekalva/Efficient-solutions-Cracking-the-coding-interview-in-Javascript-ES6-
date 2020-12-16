@@ -28,3 +28,4 @@ var twoPointerString = () => {
     return console.log(strSpr)
 }
 twoPointerString()
+
