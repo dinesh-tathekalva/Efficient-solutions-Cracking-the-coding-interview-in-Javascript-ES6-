@@ -8,7 +8,6 @@ var MatRot = () => {
          }
        }
      console.log(arr)
-     
   const n=arr.length
   for(let i=0;i<arr.length; i++){
       for(let j=0;j<n/2;j++){
